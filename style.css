@@ -1,0 +1,150 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #edf1f8;
+	padding-top: 20px;
+	margin:0;
+	height: 95%;
+}
+
+
+	/* Header */
+#header ul {
+	background-color: #204060;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	border-bottom: gold 3px solid;
+	z-index: 1;
+}
+
+	/* Location of Header Elements*/
+#header li {
+	float: right;
+	border-right: 1px solid white;
+}
+
+
+	/* Header text */
+#header li a {
+	display: block;
+	color: white;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+	/* Highlights a link when hovering over*/
+#header li a:hover {
+	background-color: #132639;
+}
+
+	/* Highlights the link that the user is currently on*/
+.active {
+	background-color: gold;
+}
+
+#homepageImages {
+	padding:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#homepageImages img {
+	vertical-align: middle;
+}
+
+	/* Atlanta background on About page */
+#bgAtlanta {
+	background-image: url("atlanta.jpg");
+	height: 100%;
+	opacity: 0.9;
+	filter: alpha(opacity=60);
+
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-bottom: 0px;
+}
+
+	/* Highlights text */
+span.highlight {
+	background-color: black;
+}
+
+	/* Positioning of videos on Other page */
+#otherVideos iframe {
+	padding-left: 40px;
+	vertical-align: left;
+}
+
+	/* Headers for "Home" and "About" pages */
+h1 {
+	color: #204060;
+	font-family: Courier;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+	/* Headers for "Projects: and Other" pages */
+h4 {
+	color: #204060;
+	font-family: Courier;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+	/* Header for Links on Other Page */
+h5 {
+	color: #204060;
+	font-family: Courier;
+	font-size: 20px;
+	padding-left: 40px;
+	text-transform: uppercase;
+}
+
+	/* Paragraph Text */
+p {
+	font-family: Courier;
+	font-size: 18px;
+	/*border: 2px solid white;*/
+	margin: 20px;
+	padding-left: 70px;
+	padding-right: 70px;
+	color: black;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+#content {
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+	/* Footer (needs fix to bottom of screen) */
+#footer {
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+
+	text-align: center;
+	background-color: #d9d9d9;
+	border-top: gold 3px solid;
+}
