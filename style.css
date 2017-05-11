@@ -3,7 +3,13 @@ html {
 }
 
 body {
-	background-color: #edf1f8;
+	/*edf1f8*/
+	background: #E6DADA;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+
 	padding-top: 20px;
 	margin:0;
 	height: 94%;
@@ -80,7 +86,7 @@ body {
 .aboutText {
 	padding-left: 35%;
 	padding-right: 35%;
-	padding-bottom: 15%; /*fixes height issue */
+	padding-bottom: 14%; /*fixes height issue */
 	margin-left: auto;
 	margin-right: auto;
 
@@ -94,12 +100,13 @@ body {
 #otherVideos iframe {
 	padding-left: 40px;
 	vertical-align: left;
+	padding-bottom: 80px;
 }
 
 	/* Headers for "Home" and "About" pages */
 h1 {
 	color: #204060;
-	font-family: Courier;
+	font-family: 'Rationale', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	padding-top: 40px;
@@ -109,10 +116,10 @@ h1 {
 	/* Headers for "Projects: and Other" pages */
 h4 {
 	color: #204060;
-	font-family: georgia;
+	font-family: 'Rationale', sans-serif;
 	font-size: 18px;
 	text-align: right;
-	padding-right: 140px;
+	padding-right: 10%;
 	padding-top: 28px;
 }
 
@@ -120,7 +127,7 @@ h4 {
 	/* Header for Links on Other Page */
 h5 {
 	color: #204060;
-	font-family: georgia;
+	font-family: 'Rationale', sans-serif;
 	font-size: 20px;
 	padding-left: 40px;
 	text-transform: uppercase;
@@ -128,12 +135,12 @@ h5 {
 
 	/* Paragraph Text */
 p {
-	font-family: Courier;
+	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 	/*border: 2px solid white;*/
 	margin: 20px;
-	padding-left: 240px;
-	padding-right: 240px;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-bottom: 20px;
 	color: black;
 }
