@@ -26,7 +26,7 @@ body {
 	overflow: hidden;
 	top: 0px;
 	width: 100%;
-	border-bottom: gold 3px solid;
+	border-bottom: white 3px solid;
 	position: fixed;
 	z-index: 1;
 }
@@ -113,11 +113,13 @@ body {
 	background-size: cover;
 }
 
+.homeText {
+	padding: 0 15% 20px 15%;
+}
+
 	/* About Me Text */
 .aboutText {
-	padding-left: 35%;
-	padding-right: 35%;
-	padding-bottom: 14%; /*fixes height issue */
+	padding: 0 35% 14% 35%;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -127,17 +129,22 @@ body {
 	background: rgba(20, 20, 20, 0.50);
 }
 
+	/* Projects text formatting */
 .projectText {
 	float: right;
-	padding-left: 40%;
-	padding-bottom: 20px;
+	padding: 0 0 20px 40%;
+}
+
+	/* Other section text formatting */	
+.otherText {
+	padding: 10% 20% 20% 20%;
+	text-align: center;
 }
 
 	/* Positioning of videos on Other page */
 #otherVideos iframe {
-	padding-left: 40px;
 	vertical-align: left;
-	padding-bottom: 10%;
+	padding: 0 0 10% 40px;
 }
 
 	/* Headers for "Home" and "About" pages */
@@ -156,8 +163,7 @@ h4 {
 	font-family: 'Rationale', sans-serif;
 	font-size: 18px;
 	text-align: right;
-	padding-right: 35%;
-	padding-top: 28px;
+	padding: 28px 35% 0 0;
 }
 
 
@@ -176,10 +182,6 @@ p {
 	font-size: 18px;
 	/*border: 2px solid white;*/
 	/*margin: 20px;*/
-
-	padding-left: 15%;
-	padding-right: 15%;
-	padding-bottom: 20px;
 	color: black;
 }
 
