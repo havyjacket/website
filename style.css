@@ -11,8 +11,9 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 
-	padding-top: 20px;
+	padding: 20px 0 0 0;
 	margin:0;
+	overflow: auto;
 	height: 94.5%;
 }
 
@@ -137,7 +138,7 @@ body {
 
 	/* Other section text formatting */	
 .otherText {
-	padding: 10% 20% 20% 20%;
+	padding: 0 20% 0 20%;
 	text-align: center;
 }
 
@@ -184,14 +185,13 @@ h5 {
 p {
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
-	/*border: 2px solid white;*/
-	/*margin: 20px;*/
 	color: black;
 }
 
 #wrapper {
 	position: relative;
 	min-height: 100%; /* affects footer */
+	margin: 0 auto;
 }
 
 #project-wrapper {
@@ -205,11 +205,14 @@ p {
 	height: 30px;
 	width: 100%;
 	bottom: 0;
+	margin: 0;
 
 	text-align: center;
 	background-color: #d9d9d9;
 	border-top: gold 3px solid;
 }
+
+
 
 	/* Removes link underline in footer*/
 #footer a {
