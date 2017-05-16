@@ -181,6 +181,15 @@ h5 {
 	text-transform: uppercase;
 }
 
+	/* Subheaders for Other Page content */
+h6 {
+	color: #204060;
+	font-family: 'Rationale', sans-serif;
+	font-size: 18px;
+	text-align: right;
+	padding: 28px 25% 0 0;
+}
+
 	/* Paragraph Text */
 p {
 	font-family: 'Oswald', sans-serif;
