@@ -147,10 +147,11 @@ body {
 }
 
 	/* Positioning of videos on Other page */
-#otherVideos iframe {
+/*#otherVideos iframe {
 	vertical-align: left;
-	padding: 0 0 10% 40px;
-}
+	padding: 0 0 5% 40px;
+}*/
+
 
 	/* Headers for "Home" and "About" pages */
 h1 {
@@ -183,11 +184,11 @@ h5 {
 
 	/* Subheaders for Other Page content */
 h6 {
-	color: #204060;
-	font-family: 'Rationale', sans-serif;
-	font-size: 18px;
+	color: #bb0000;
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
 	text-align: right;
-	padding: 28px 25% 0 0;
+	padding: 0 40px 0 0;
 }
 
 	/* Paragraph Text */
