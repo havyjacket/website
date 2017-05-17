@@ -5,7 +5,7 @@ html {
 body {
 	background: #E6DADA;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to top, #497783, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #c6c6c6, #5184C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to top, #5184C5, #c6c6c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -130,10 +130,10 @@ body {
 }
 
 	/* Projects text formatting */
-.projectText {
+/*.projectText {
 	float: right;
 	padding: 0 4% 10% 40%;
-}
+}*/
 
 	/* Other section text formatting */	
 .otherText {
