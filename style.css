@@ -114,6 +114,8 @@ body {
 }
 
 .homeText {
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
 	padding: 0 15% 20px 15%;
 }
 
@@ -129,15 +131,11 @@ body {
 	background: rgba(20, 20, 20, 0.50);
 }
 
-	/* Projects text formatting */
-/*.projectText {
-	float: right;
-	padding: 0 4% 10% 40%;
-}*/
 
 	/* Other section text formatting */	
 .otherText {
-	padding: 0 20% 0 20%;
+	padding: 5% 20% 0 20%;
+	font-family: 'Rationale', sans-serif;
 	text-align: center;
 }
 
@@ -145,17 +143,11 @@ body {
 	text-decoration: none;
 }
 
-	/* Positioning of videos on Other page */
-/*#otherVideos iframe {
-	vertical-align: left;
-	padding: 0 0 5% 40px;
-}*/
-
 
 
 	/* Headers for "Home" and "About" pages */
 h1 {
-	color: white;
+	color: #204060;
 	font-family: 'Rationale', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
@@ -168,8 +160,8 @@ h4 {
 	color: #204060;
 	font-family: 'Rationale', sans-serif;
 	font-size: 18px;
-	text-align: right;
-	padding: 28px 40% 0 0;
+	text-align: left;
+	padding: 4% 0 0 40%;
 }
 
 
@@ -194,8 +186,10 @@ h6 {
 
 	/* Paragraph Text */
 p {
-	font-family: 'Oswald', sans-serif;
-	font-size: 18px;
+	/*font-family: 'Oswald', sans-serif;*/
+	/*font-family: 'Rationale', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	color: black;
 }
 
