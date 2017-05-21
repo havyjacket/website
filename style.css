@@ -155,7 +155,7 @@ body {
 
 	/* Headers for "Home" and "About" pages */
 h1 {
-	color: #204060;
+	color: white;
 	font-family: 'Rationale', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
@@ -218,6 +218,7 @@ p {
 	bottom: 0;
 	margin: 0;
 
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	background-color: #d9d9d9;
 	border-top: gold 3px solid;
