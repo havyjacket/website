@@ -134,13 +134,20 @@ body {
 
 	/* Other section text formatting */	
 .otherText {
-	padding: 5% 20% 0 20%;
-	font-family: 'Rationale', sans-serif;
+	padding: 10% 20% 10% 20%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
 	text-align: center;
 }
 
 .otherText a {
 	text-decoration: none;
+}
+
+.youtubeText {
+	font-family: 'Oswald', sans-serif;
+	font-size: 17px;
+	padding: 1% 10% 0 0;
 }
 
 
@@ -170,28 +177,21 @@ h5 {
 	color: #204060;
 	font-family: 'Rationale', sans-serif;
 	font-size: 28px;
-	padding-left: 40px;
-	/*text-align: center;*/
+	/*padding-left: 40px;*/
+	text-align: center;
 	text-transform: uppercase;
 }
 
-	/* Subheaders for Other Page content */
-h6 {
-	color: #bb0000;
-	font-family: 'Oswald', sans-serif;
-	font-size: 24px;
-	text-align: right;
-	padding: 0 40px 0 0;
-}
 
 	/* Paragraph Text */
 p {
-	/*font-family: 'Oswald', sans-serif;*/
-	/*font-family: 'Rationale', sans-serif;*/
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 17px;
 	color: black;
 }
+
+
+
 
 #wrapper {
 	position: relative;
@@ -214,13 +214,29 @@ p {
 
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
-	background-color: #c0c0c0;
+	background-color: #C0C0C0;
 	border-top: white 3px solid;
 }
 
+#otherFooter {
+	position: fixed;
+	height: 30px;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
 
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	background-color: #C0C0C0;
+	border-top: white 3px solid;
+}
 
 	/* Removes link underline in footer*/
 #footer a {
+	text-decoration: none;
+}
+
+	/* Sticky footer for other page */
+#otherFooter a {
 	text-decoration: none;
 }
