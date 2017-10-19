@@ -3,23 +3,20 @@ html {
 }
 
 body {
-	background: #C0C0C0;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #C0C0C0, #C8CFD7, #5184C5, #191B88);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #C0C0C0, #C8CFD7, #5184C5, #191B88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #d9d9d9;
+
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
 
-	padding: 20px 0 0 0;
-	margin:0;
+	margin: 0;
 	overflow: auto;
-	height: 94.5%;
+	height: 100%;
 }
 
 
 	/* Header style */
 #header ul {
-	background-color: #204060;
+	background-color: #2C3539;
 	list-style-type: none;
 	margin:0;
 	padding:0;
@@ -34,52 +31,23 @@ body {
 	/* Location of Header Elements*/
 #header li {
 	float: right;
-	border-right: 1.5px solid white;
+	border-right: 1px solid white;
 }
 
 	/* Header text */
-#header li a, .otherBtn {
+#header li a {
 	display: inline-block;
 	color: white;
 	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
-	/*text-transform: uppercase;*/
+	font-family: 'Gruppo', cursive;
+	font-size: 19px;
 }
 
 	/* Highlights a link when hovering over*/
-#header li a:hover, .interestingTopics:hover .otherBtn {
-	background-color: #132639;
-}
-
-	/* The container <div> needed to position the other content */
-.interestingTopics {
-	position: relative;
-	display: inline-block;
-}
-
-	/* Content inside Other Tab */
-.other-content {
-	display: none;
-	position: fixed;
-	text-align: center;
-	max-width: 100px;
-	background-color: #204060;
-	z-index: 1;
-	right: 1.5px;
-}
-
-	/* Links inside the Other dropdown */
-.other-content a {
-	color: white;
-	text-decoration: none;
-	display: block;
-	width: 80%;
-}
-
-	/* Shows categoreis of Other section upon hover */
-.interestingTopics:hover .other-content {
-	display: block;
+#header li a:hover {
+	background-color: #1a1a1a;
 }
 
 	/* Highlights the link that the user is currently on*/
@@ -90,27 +58,15 @@ body {
 
 
 
-#homepageImages {
-	padding:0px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top: 10px;
-	text-align: center;
-}
 
-#homepageImages img {
-	vertical-align: middle;
-}
+/* -------------- HOME PAGE -------------- */
 
-	/* Atlanta background on About page */
-#bgAtlanta {
-	background-image: url("images/atlanta.jpg");
-	width: 100%;
-	height: 100%;
-	position: relative;
-
-	background-repeat: no-repeat;
-	background-size: cover;
+	/* Header for "Home" page */
+h1 {
+	color: #005BBB;
+	font-family: 'Gruppo', cursive;
+	font-size: 34px;
+	padding-top: 120px;
 }
 
 .homeText {
@@ -119,63 +75,143 @@ body {
 	padding: 0 15% 20px 15%;
 }
 
+/* Disallows user highlight or drag of image*/
+img {
+	-webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none; 
+	user-select: none;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+h3 {
+	color: black;
+	font-family: 'Gruppo', cursive;
+	font-size: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Gruppo', cursive;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 18px;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none; 
+	user-select: none;
+}
+
+.button:focus {
+	outline: none;
+}
+
+.appleButton {
+	background-color: #d9d9d9;
+	color: black;
+	border: 2px solid #2C3539;
+	border-radius: 28px;
+}
+
+.appleButton:hover {
+	background-color: #b3b3b3;
+}
+
+.androidButton  {
+	background-color: #d9d9d9;
+	color: black;
+	border: 2px solid #2C3539;
+	border-radius: 28px;
+}
+
+.androidButton:hover {
+	background-color: #b3b3b3;
+}
+
+.steamworksButton {
+	background-color: #d9d9d9;
+	color: black;
+	border: 2px solid #2C3539;
+	border-radius: 28px;
+}
+
+.steamworksButton:hover {
+	background-color: #b3b3b3;
+}
+
+
+
+
+
+
+/* -------------- ABOUT PAGE -------------- */
+	
+	/* Atlanta background on About page */
+.bgAtlanta {
+	background:
+		/* tints background image for text to be read more clearly*/
+		linear-gradient(
+      		rgba(22, 22, 22, 0.75), 
+      		rgba(22, 22, 22, 0.75)
+    	),
+		url("images/atlanta.jpg");
+	min-height: 100%;
+	position: relative; /*fixes footer jumping*/
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+	/* Header for "About" page */
+h2 {
+	color: white;
+	font-family: 'Gruppo', cursive;
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 120px;
+}
+
 	/* About Me Text */
 .aboutText {
-	padding: 0 35% 10% 35%;
+	padding: 0 15% 10% 15%;
 	margin-left: auto;
 	margin-right: auto;
 
-	font-family: Courier;
-	font-size: 16px;
-	text-align: left;
-	background: rgba(20, 20, 20, 0.50);
+	font-family: 'Gruppo', cursive;
+	font-size: 20px;
 }
 
-
-	/* Other section text formatting */	
-.otherText {
-	padding: 10% 20% 10% 20%;
-	font-family: 'Oswald', sans-serif;
-	font-size: 18px;
-	text-align: center;
-}
-
-.otherText a {
+.aboutText a {
 	text-decoration: none;
 }
 
 
 
-	/* Headers for "Home" and "About" pages */
-h1 {
-	color: #204060;
-	font-family: 'Rationale', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 40px;
-}
 
 
-	/* Headers for "Projects: and Other" pages */
-h4 {
-	color: #204060;
-	font-family: 'Rationale', sans-serif;
+/* -------------- PROJECTS PAGE -------------- */
+
+	/* Headers for "Projects" page */
+h5 {
+	color: #005BBB;
+	font-family: 'Gruppo', cursive;
 	font-size: 18px;
 	text-align: left;
-	padding: 4% 0 0 40%;
 }
-
-
-	/* Header for Links on Other Page */
-h5 {
-	color: #204060;
-	font-family: 'Rationale', sans-serif;
-	font-size: 28px;
-	/*padding-left: 40px;*/
-	text-align: center;
-	text-transform: uppercase;
-}
-
 
 	/* Paragraph Text */
 p {
@@ -184,57 +220,77 @@ p {
 	color: black;
 }
 
-
-
-
-#wrapper {
-	position: relative;
-	min-height: 100%; /* affects footer */
-	margin: 0 auto;
-}
-
-#project-wrapper {
+.project-wrapper {
 	position: absolute;
 	min-height: 100%;
 }
 
-	/* Footer */
-#footer {
-	position: absolute;
-	height: 30px;
-	min-width: 100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: 0;
 
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
-	background-color: #C0C0C0;
-	border-top: white 3px solid;
+
+
+
+
+.wrapper {
+	position: relative;
+	height: 100%; /* affects footer */
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: auto;
 }
 
-#fixedFooter {
-	position: fixed;
+	/* Footer */
+.footer {
+	position: relative;
 	height: 30px;
+	line-height: 30px;
 	min-width: 100%;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	margin: 0;
 
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Gruppo', cursive;
 	text-align: center;
-	background-color: #C0C0C0;
-	border-top: white 3px solid;
+	background-color: white;
+	border-top: #2C3539 3px solid;
+
+	-webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none; 
+	user-select: none;
+}
+
+.fixedFooter {
+	position: fixed;
+	height: 35px;
+	line-height: 35px;
+	min-width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+
+	font-family: 'Gruppo', cursive;
+	text-align: center;
+	background-color: white;
+	border-top: #2C3539 3px solid;
+
+	-webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none; 
+	user-select: none;
 }
 
 	/* Removes link underline in footer*/
-#footer a {
+.footer a {
 	text-decoration: none;
 }
 
 	/* Sticky footer for some pages */
-#fixedFooter a {
+.fixedFooter a {
 	text-decoration: none;
 }
