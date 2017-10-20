@@ -1,6 +1,7 @@
 html {
 	height: 100%;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 body {
@@ -66,7 +67,7 @@ body {
 h1 {
 	color: #005BBB;
 	font-family: 'Gruppo', cursive;
-	font-size: 34px;
+	font-size: 36px;
 	padding-top: 120px;
 }
 
@@ -84,7 +85,7 @@ img {
     -ms-user-select: none;
     user-drag: none; 
 	user-select: none;
-	padding-top: 20px;
+	padding-top: 35px;
 	padding-bottom: 50px;
 	max-width: 90%;
 }
@@ -171,10 +172,10 @@ h3 {
 		url("images/atlanta.jpg");
 
 
-	height: 100%;
-	position: relative; /*fixes footer jumping*/
+	min-height: 100%;
+	position: absolute; /*fixes footer jumping*/
 	width: 100%;
-	padding: 0 0 120px 0; /* hack around fixing footer: FIX THIS IMMEDIATELY;*/
+	/*padding: 0 0 120px 0;*/ /* hack around fixing footer: FIX THIS IMMEDIATELY;*/
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -234,13 +235,11 @@ p {
 
 
 
-
-
 .about-wrapper {
 	position: relative;
-	min-height: 100%; /* affects footer */
-	overflow: auto;
+	height: 100%; /* affects footer */
 }
+
 
 .wrapper {
 	position: relative;
@@ -276,12 +275,35 @@ p {
 	user-select: none;
 }
 
+.footer2 {
+	position: relative;
+	height: 35px;
+	line-height: 35px;
+	min-width: 100%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+
+	font-family: 'Gruppo', cursive;
+	text-align: center;
+	background-color: white;
+	border-top: #2C3539 3px solid;
+
+	-webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-drag: none; 
+	user-select: none;
+}
+
 	/* Removes link underline in footer*/
 .footer a {
 	text-decoration: none;
 }
 
 	/* Sticky footer for some pages */
-.relativeFooter a {
+.footer2 a {
 	text-decoration: none;
 }
